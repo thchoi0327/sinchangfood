@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>신창식품</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; overflow-x: hidden; }
+
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 1rem;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-menu-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow: hidden;
+    }
+
+    .nav-menu {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+      gap: 1rem;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      flex-shrink: 0;
+    }
+
+    .nav-scroll-btn {
+      background: white;
+      color: black;
+      border: none;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .hero {
+      background: url('https://modo-phinf.pstatic.net/20170911_96/1505105939919VYB2f_JPEG/mosaaAT6pD.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+
+    .sidebar-toggle {
+      display: none;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1100;
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .sidebar-toggle span {
+      display: block;
+      height: 4px;
+      margin: 5px;
+      background: black;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -200px;
+      width: 200px;
+      height: 100%;
+      background: #333;
+      color: white;
+      padding: 1rem;
+      transition: left 0.3s;
+      z-index: 1050;
+    }
+
+    .sidebar.open {
+      left: 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu-wrapper {
+        display: none;
+      }
+
+      .sidebar-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h3>사이드바</h3>
+    <a href="#" style="color: white; display: block; margin-top: 1rem;">홈</a>
+    <a href="#" style="color: white; display: block; margin-top: 0.5rem;">공장소개</a>
+  </div>
+
+  <div class="sidebar-toggle" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header>
+    <div>신창식품</div>
+    <div class="nav-menu-wrapper">
+      <div class="nav-menu" id="navMenu">
+        <a href="#">홈</a>
+        <a href="#">공장소개</a>
+        <a href="#">공장보유설비</a>
+        <a href="#">순대제품</a>
+        <a href="#">바자회순대</a>
+        <a href="#">구글 상단정보</a>
+        <a href="#">전체보기</a>
+        <a href="#">로그인</a>
+      </div>
+      <button class="nav-scroll-btn" onclick="scrollNav(200)">&raquo;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>순대공장 신창식품&amp;신토리</h1>
+  </section>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+
+    function scrollNav(px) {
+      const nav = document.getElementById('navMenu');
+      nav.scrollLeft += px;
+    }
+  </script>
+</body>
+</html>
