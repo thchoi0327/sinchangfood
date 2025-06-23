@@ -525,14 +525,14 @@ input, select, textarea {
 		.preview p.explain{
 			padding:0;
 			border:none;
-			margin:3.8rem 0 1.5rem 0;
-			font-size: 1rem;
-			line-height: 1.5rem !important;
+			margin:1.5rem 0 4.5rem 0;
+			font-size: 1.5rem;
+			line-height: 2.3rem !important;
 		}
 		.preview p.explain strong{
 			display: block;
 			margin-bottom:1rem;
-			color:#39c29d;
+			color:var(--dt-primary-color);
 			font-size: 1.5rem;
 		}
 		.img1Container,

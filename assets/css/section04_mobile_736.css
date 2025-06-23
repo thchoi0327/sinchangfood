@@ -9,7 +9,7 @@
 	}
 	section .container .mentBox p strong{
 		display: block;
-		color:#39c29d;
+		color:var(--dt-primary-color);
 		font-size: 0.95em !important;
 	}
 	/* Basic */

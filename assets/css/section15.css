@@ -544,7 +544,7 @@ input, select, textarea {
 		.preview p.explain strong{
 			display: block;
 			margin-bottom:1rem;
-			color:#39c29d;
+			color:var(--dt-primary-color);
 			font-size: 1.5rem;
 		}
 		.img1Container,
