@@ -1846,14 +1846,12 @@ input, select, textarea {
 		gap: 10px;
 		justify-content: space-between;
 	}
-	.container p{
-		border-top:1px solid #ddd;
-		padding-top:1rem;
+	.container p{			
 		color: rgba(0, 0, 0, 0.8);
-		font-size: 0.825rem;
+		font-size: 1.1rem;
 	}
 	.imgBox img{
-		transition: transform 0.2s ease;
+		transition: transform 0.2s ease !important;
 		width: 100%;
 		height: auto;
 	}
@@ -1865,12 +1863,16 @@ input, select, textarea {
 		justify-content: space-between;
 		gap:1rem;
 	}	
-	
+	.onlyMobile{
+		display: none;
+	}
 	section .container .mentBox p{ margin-top:0; line-height: 2;}
 	
 
 	section#four .container .mentBox p{
-		max-width: 100%; margin-top:0; font-size: 0.9rem;
+		max-width: 100%;
+		margin-top:0;
+		font-size: 1.1rem;
 		white-space: normal;
 		word-break: keep-all;   /* 한글 줄바꿈 자연스럽게 */
 		overflow-wrap: break-word;}
@@ -2380,10 +2382,20 @@ input, select, textarea {
 			color:#111;
 			border:none;
 		}
+		.space1Height{ height: 1rem; }
 		.space2Height{ height: 2rem; }
 		.space3Height{ height: 3rem; }
 		.spaceHeight{ height: 4rem; }
+
+		.space1Height.borderBot,
+		.space2Height.borderBot,
+		.space3Height.borderBot,
+		.spaceHeight.borderBot {border-top: 1px solid #ddd;}
 		
+		.space1Height.borderTop,
+		.space2Height.borderTop,
+		.space3Height.borderTop,
+		.spaceHeight.borderTop {border-top: 1px solid #ddd;}
 		
 		.img1Container,
 		.img2Container,
@@ -2984,7 +2996,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #c13030;
+					border-top: solid 2px var(--dt-primary-color);
 					display: block;
 					padding: 0;
 				}
@@ -2995,13 +3007,13 @@ input, select, textarea {
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
-						transition: background-color 0.2s ease, color 0.2s ease;
+						transition: background-color 0.2s ease, color 0.2s ease !important;
 						
 					}
-
 						#header > nav ul li a.active {
-							color: #fff !important;
 							transition: none;
+							background-color: #fff !important;
+							color: var(--dt-primary-color) !important;
 						}
 						#header > nav ul li a:hover{
 							color: var(--dt-primary-color) !important;

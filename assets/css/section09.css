@@ -1929,7 +1929,7 @@ input, select, textarea {
 		font-size: 0.825rem;
 	}
 	.imgBox img{
-		transition: transform 0.2s ease;
+		transition: transform 0.2s ease !important;
 		width: 100%;
 		height: auto;
 	}
@@ -3012,7 +3012,7 @@ input, select, textarea {
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
-						transition: background-color 0.2s ease, color 0.2s ease;
+						transition: background-color 0.2s ease, color 0.2s ease !important;
 						
 					}
 
@@ -3029,6 +3029,9 @@ input, select, textarea {
 					#header > nav ul li:first-child {
 						border-top: 0;
 					}
+	#header .consultBtnBox{
+		display: none;
+	}
 	#header .callBtnBox{
 		display: none;
 	}

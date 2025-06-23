@@ -1921,7 +1921,7 @@ input, select, textarea {
 		font-size: 0.825rem;
 	}
 	.imgBox img{
-		transition: transform 0.2s ease;
+		transition: transform 0.2s ease !important;
 		width: 100%;
 		height: auto;
 	}
@@ -3020,6 +3020,9 @@ input, select, textarea {
 					#header > nav ul li:first-child {
 						border-top: 0;
 					}
+	#header .consultBtnBox{
+		display: none;
+	}
 	#header .callBtnBox{
 		display: none;
 	}

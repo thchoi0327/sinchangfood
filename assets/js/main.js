@@ -3,9 +3,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-:root{
-	--dt-primary-color: #c13030;
-}
 (function($) {
 
 	var $window = $(window),
@@ -156,6 +153,33 @@
 				return 0;
 
 			}
+		});
+
+
+		// 모바일 스와이프 감지 (열기)
+		let touchStartX = null;
+
+		window.addEventListener('touchstart', function (e) {
+		if (e.touches.length === 1) {
+			touchStartX = e.touches[0].clientX;
+		}
+		});
+
+		window.addEventListener('touchend', function (e) {
+		if (!touchStartX) return;
+
+		let touchEndX = e.changedTouches[0].clientX;
+		let deltaX = touchStartX - touchEndX;
+
+		// 오른쪽 → 왼쪽으로 강하게 스와이프 (예: 100px 이상)
+		if (deltaX > 50) {
+			// 모바일 화면에서만 동작하게 제한
+			if (window.innerWidth <= 980) {
+			$('body').addClass('header-visible'); // 메뉴 열기
+			}
+		}
+
+		touchStartX = null;
 		});
 
 })(jQuery);
