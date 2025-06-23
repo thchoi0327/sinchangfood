@@ -550,7 +550,7 @@ input, select, textarea {
 			align-items: center;
 			justify-content: center;
 			width: 100%;
-			background-color: #39c29d;
+			background-color: #c13030;
 			color:white;
 			border-radius: 4px;
 			box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
@@ -560,6 +560,12 @@ input, select, textarea {
 			font-weight: 700;
 			font-size: 1rem;
 			transition: transform 0.2s ease;
+			gap:0.2rem;
+		}
+		.callBtn img{
+			position: relative;
+			top:1px;
+			width: 1rem;			
 		}
 		.callBtn:hover{
 			color:white !important;
