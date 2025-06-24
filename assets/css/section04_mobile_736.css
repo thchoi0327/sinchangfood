@@ -1,6 +1,8 @@
 /* Small mobile */
 @media screen and (max-width: 736px) {
-	#fullscreenImage {
+	.noMobile{ display: none !important}
+	.onlyMobile{ display: revert !important; }			
+	#fullscreenImage { width: 90vw; }			#fullscreenImage {
 		width: 90vw;
 	}
 	section .container .mentBox p{
@@ -170,9 +172,16 @@
 			-ms-transform: translateX(-17em);
 			transform: translateX(-17em);
 		}
-		a.major{
+		a.major h2{
+			font-size: 1.4rem !important;
+		}
+		
+		a.major{			
 			margin-bottom: 1.2rem;
 		}
+		a.major h2{
+			font-size: 1.4rem !important;
+		}			
 		.preview p.explain{
 			padding:0;
 			border:none;

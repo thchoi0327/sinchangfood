@@ -1,5 +1,6 @@
 /* Small mobile */
 @media screen and (max-width: 736px) {
+	.noMobile{ display: none !important}
 	.onlyMobile{ display: revert !important; }			
 	#fullscreenImage { width: 90vw; }	
 
@@ -188,11 +189,16 @@
 			-ms-transform: translateX(-17em);
 			transform: translateX(-17em);
 		}
+		a.major h2{
+			font-size: 1.4rem !important;
+		}
+		.preview-detail{ margin-top:2rem; }					
 		.preview p.explain{
 			padding:0;
 			border:none;
-			margin:3.2rem 0 1rem 0;
-			font-size: 1rem;
+			margin:1rem 0 4rem 0 !important;
+			font-size: 1.1rem;
+			line-height: 1.7rem !important;
 		}
 		.img2Container,
 		.img3Container{

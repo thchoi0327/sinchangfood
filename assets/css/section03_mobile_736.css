@@ -1,6 +1,8 @@
 /* Small mobile */
 @media screen and (max-width: 736px) {
-	#fullscreenImage {
+	.noMobile{ display: none !important}
+	.onlyMobile{ display: revert !important; }			
+	#fullscreenImage { width: 90vw; }			#fullscreenImage {
 		width: 90vw;
 	}
 	section .container .mentBox p{
@@ -163,7 +165,9 @@
 				font-size: 14px;
 				width: 44px;
 			}
-
+		a.major h2{
+			font-size: 1.4rem !important;
+		}	
 		body.header-visible #wrapper, body.header-visible #titleBar {
 			-moz-transform: translateX(-17em);
 			-webkit-transform: translateX(-17em);

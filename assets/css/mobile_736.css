@@ -1,6 +1,8 @@
 /* Small mobile */
 @media screen and (max-width: 736px) {
+	.noMobile{ display: none !important}
 	.onlyMobile{ display: revert !important; }			
+	#fullscreenImage { width: 90vw; }			.onlyMobile{ display: revert !important; }			
 	#fullscreenImage { width: 90vw; }	
 
 	.container a h2{
@@ -187,6 +189,9 @@
 			-webkit-transform: translateX(-17em);
 			-ms-transform: translateX(-17em);
 			transform: translateX(-17em);
+		}
+		a.major h2{
+			font-size: 1.4rem !important;
 		}
 		.preview p.explain{
 			padding:0;

@@ -1863,9 +1863,9 @@ input, select, textarea {
 		justify-content: space-between;
 		gap:1rem;
 	}	
-	.onlyMobile{
-		display: none;
-	}
+	.onlyMobile{ display: none; }
+		
+	
 	section .container .mentBox p{ margin-top:0; line-height: 2;}
 	
 
@@ -1952,6 +1952,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin-top: -0.75em;
 	}
+	.onlyMobile{ display: none; }
 
 /* Form */
 

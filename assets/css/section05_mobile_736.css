@@ -1,6 +1,8 @@
 /* Small mobile */
 @media screen and (max-width: 736px) {
-	#fullscreenImage {
+	.noMobile{ display: none !important}
+	.onlyMobile{ display: revert !important; }			
+	#fullscreenImage { width: 90vw; }			#fullscreenImage {
 		width: 90vw;
 	}
 	section .container .mentBox p{
@@ -170,15 +172,19 @@
 			-ms-transform: translateX(-17em);
 			transform: translateX(-17em);
 		}
+		a.major h2{
+			font-size: 1.4rem !important;
+		}
 		.preview p.explain{
 			padding:0;
 			border:none;
-			margin:1rem 0 4rem 0;
-			font-size: 1rem;
+			margin:1rem 0 4rem 0 !important;;
+			font-size: 1rem !important;;
 		}
 		.preview p.explain strong{
-			font-size: 1.2rem;
+			font-size: 1.2rem !important;;
 			margin-bottom: 0.4rem;
+			line-height: 1.4rem !important;
 		}
 		.img2Container,
 		.img3Container{

@@ -14,7 +14,7 @@
 }
 @font-face {
 	font-family: 'NotoSansKR';
-	src: url('../font/static/NotoSansKR-Bold.ttf') format('truetype');
+	src: url('../../font/static/NotoSansKR-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -522,13 +522,22 @@ input, select, textarea {
 		.container p.no-top-line{
 			border-top: none;
 		}
+		.container p.finalMent{
+			padding:0;
+			border:none;
+			margin:1rem 0 2rem 0;
+			font-size: 1.1rem;
+			line-height: 1.5rem !important;			
+		}
+
 		.preview p.explain{
 			padding:0;
 			border:none;
-			margin:3.5rem 0 1.5rem 0;
-			font-size: 1rem;
+			margin:1rem 0 4.2rem 0;
+			font-size: 1.2rem;
 			line-height: 1.5rem !important;
 		}
+
 		.preview p.explain.topLine{
 			border-top:1px solid #ddd;
 			padding-top:1rem
@@ -1886,6 +1895,7 @@ input, select, textarea {
 		align-items: center;
 		border-bottom:1px solid #ddd;
 		font-family: sans-serif;
+		margin-bottom: 2rem;
 	}
 	/* 공통 스타일 */
 	a.major.hoverEffect::before,
@@ -1980,8 +1990,9 @@ input, select, textarea {
 		font-size: 1.75em;
 		font-weight: 700;
 		margin-top: -0.75em;
-	}
-
+	}	
+	.onlyMobile{ display: none; }
+	
 /* Form */
 
 	form {

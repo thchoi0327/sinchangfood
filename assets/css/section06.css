@@ -14,7 +14,7 @@
 }
 @font-face {
 	font-family: 'NotoSansKR';
-	src: url('../font/static/NotoSansKR-Bold.ttf') format('truetype');
+	src: url('../../font/static/NotoSansKR-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -522,11 +522,19 @@ input, select, textarea {
 		.container p.no-top-line{
 			border-top: none;
 		}
+		.container p.finalMent{
+			padding:0;
+			border:none;
+			margin:1rem 0 2rem 0;
+			font-size: 1.1rem;
+			line-height: 1.5rem !important;			
+		}
+
 		.preview p.explain{
 			padding:0;
 			border:none;
-			margin:1.5rem 0 4rem 0;
-			font-size: 1rem;
+			margin:1rem 0 4.2rem 0;
+			font-size: 1.2rem;
 			line-height: 1.5rem !important;
 		}
 		.preview p.explain strong{
@@ -1974,6 +1982,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin-top: -0.75em;
 	}
+	.onlyMobile{ display: none; }
 
 /* Form */
 
